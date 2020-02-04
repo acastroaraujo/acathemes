@@ -1,15 +1,18 @@
+#' @importFrom ggplot2 %+replace% theme theme_grey theme_minimal theme_bw
+NULL
 
 
-
+# Source: https://ggplot2-book.org/polishing.html
 
 #' Custom
 #'
-#' @return
+#' @param ... describe here
+#'
+#' @return a custom ggplot2 theme
 #' @export
 #'
-#' @examples
-theme_custom <- function() {
-  theme_minimal(base_family = "IBM Plex Sans") +
+theme_custom <- function(...) {
+  theme_minimal(...) %+replace%
     theme(
       plot.title = element_text(face = "bold"),
       panel.grid.minor = element_blank(),
