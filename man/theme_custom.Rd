@@ -4,7 +4,7 @@
 \alias{theme_custom}
 \title{Custom}
 \usage{
-theme_custom(...)
+theme_custom(base_family = "Roboto", ...)
 }
 \arguments{
 \item{...}{describe here}
