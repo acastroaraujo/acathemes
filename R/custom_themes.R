@@ -2,7 +2,7 @@
 NULL
 
 
-#'
+#' @export
 theme_custom <- function(base_family = "Roboto", ...) {
   theme_minimal(...) %+replace%
     theme(
