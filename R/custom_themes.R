@@ -2,14 +2,6 @@
 NULL
 
 
-# Source: https://ggplot2-book.org/polishing.html
-
-#' Custom
-#'
-#' @param ... describe here
-#'
-#' @return a custom ggplot2 theme
-#' @export
 #'
 theme_custom <- function(base_family = "Roboto", ...) {
   theme_minimal(...) %+replace%
@@ -22,16 +14,7 @@ theme_custom <- function(base_family = "Roboto", ...) {
 }
 
 
-#' Blog
-#'
-#' @param base_family font type, default to Roboto
-#' @param fill default to #fffff8, which is the color in tufte handouts
-#' @param ...
-#'
-#' @return a custom ggplot2 theme
 #' @export
-#'
-#' @examples
 theme_super_minimal <- function(base_family = "Roboto", fill = "#fffff8", ...) {
   theme_minimal(base_line_size = 0, ...) %+replace%
     theme(
@@ -44,5 +27,16 @@ theme_super_minimal <- function(base_family = "Roboto", fill = "#fffff8", ...) {
       )
 }
 
-
+#' @export
+theme_blog <- function(base_family = "Verdana", fill = "#FDF6E4", ...) {
+  theme_minimal(base_line_size = 0, ...) %+replace%
+    theme(
+      plot.title = element_text(face = "bold", margin = margin(0, 0, 5, 0), hjust = 0, size = 13),
+      plot.subtitle = element_text(face = "italic", margin = margin(0, 0, 5, 0), hjust = 0),
+      plot.background = element_rect(fill = fill, size = 0), complete = TRUE,
+      axis.title.x = element_text(margin = margin(15, 0, 0, 0)),
+      axis.title.y = element_text(angle = 90, margin = margin(0, 15, 0, 0)),
+      strip.text = element_text(face = "italic")
+    )
+}
 
