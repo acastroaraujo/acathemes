@@ -22,7 +22,7 @@ theme_super_minimal <- function(base_family = "Roboto", fill = "#fffff8", ...) {
       plot.subtitle = element_text(face = "italic", margin = margin(0, 0, 5, 0), hjust = 0),
       plot.background = element_rect(fill = fill, size = 0), complete = TRUE,
       axis.title.x = element_text(margin = margin(15, 0, 0, 0)),
-      axis.title.y = element_text(angle = 90, margin = margin(0, 15, 0, 0)),
+      axis.title.y = element_text(angle = 90, margin = margin(0, 20, 0, 0)),
       strip.text = element_text(face = "italic")
       )
 }
@@ -35,7 +35,7 @@ theme_blog <- function(base_family = "Verdana", fill = "#FDF6E4", ...) {
       plot.subtitle = element_text(face = "italic", margin = margin(0, 0, 5, 0), hjust = 0),
       plot.background = element_rect(fill = fill, size = 0), complete = TRUE,
       axis.title.x = element_text(margin = margin(15, 0, 0, 0)),
-      axis.title.y = element_text(angle = 90, margin = margin(0, 15, 0, 0)),
+      axis.title.y = element_text(angle = 90, margin = margin(0, 20, 0, 0)),
       strip.text = element_text(face = "italic")
     )
 }
