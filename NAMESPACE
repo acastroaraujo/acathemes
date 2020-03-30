@@ -2,8 +2,12 @@
 
 export(theme_blog)
 export(theme_custom)
-export(theme_super_minimal)
+export(theme_graph)
 importFrom(ggplot2,"%+replace%")
+importFrom(ggplot2,element_line)
+importFrom(ggplot2,element_rect)
+importFrom(ggplot2,element_text)
+importFrom(ggplot2,margin)
 importFrom(ggplot2,theme)
 importFrom(ggplot2,theme_bw)
 importFrom(ggplot2,theme_grey)
