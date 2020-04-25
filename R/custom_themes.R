@@ -16,7 +16,7 @@ theme_custom <- function(base_family = "Roboto", fill = "white", ...) {
 }
 
 #' @export
-theme_blog <- function(base_family = "Verdana", base_line_size = 1, fill = "#FDF6E4", ...) {
+theme_blog <- function(base_family = "Avenir Next Condensed", base_line_size = 1, fill = "antiquewhite", ...) {
   theme_minimal(base_line_size = base_line_size, ...) %+replace%
     theme(
       plot.title = element_text(face = "bold", margin = margin(0, 0, 5, 0), hjust = 0, size = 13),
