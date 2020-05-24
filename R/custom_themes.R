@@ -3,8 +3,8 @@ NULL
 
 
 #' @export
-theme_custom <- function(base_family = "Roboto", fill = "white", ...) {
-  theme_minimal(...) %+replace%
+theme_custom <- function(base_family = "Avenir Next Condensed", fill = "white", ...) {
+  theme_minimal(base_family = base_family, ...) %+replace%
     theme(
       plot.title = element_text(face = "bold", margin = margin(0, 0, 5, 0), hjust = 0, size = 13),
       plot.subtitle = element_text(face = "italic", margin = margin(0, 0, 5, 0), hjust = 0),
@@ -17,7 +17,7 @@ theme_custom <- function(base_family = "Roboto", fill = "white", ...) {
 
 #' @export
 theme_blog <- function(base_family = "Avenir Next Condensed", base_line_size = 1, fill = "antiquewhite", ...) {
-  theme_minimal(base_line_size = base_line_size, ...) %+replace%
+  theme_minimal(base_family = base_family, base_line_size = base_line_size, ...) %+replace%
     theme(
       plot.title = element_text(face = "bold", margin = margin(0, 0, 5, 0), hjust = 0, size = 13),
       plot.subtitle = element_text(face = "italic", margin = margin(0, 0, 5, 0), hjust = 0),
