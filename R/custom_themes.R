@@ -1,4 +1,4 @@
-#' @importFrom ggplot2 %+replace% theme theme_grey theme_minimal theme_bw margin element_text element_rect element_line
+#' @importFrom ggplot2 %+replace% theme theme_grey theme_minimal theme_bw margin element_text element_rect element_line stat_ellipse
 NULL
 
 
@@ -36,6 +36,7 @@ theme_graph <- function() {
   theme(axis.title = element_blank(), axis.text = element_blank())
 }
 
+
 #' @export
 geom_norm_ellipse <- function(data = NULL, fill = "#333333", color = NA, size = 1/3, segments = 1e3) {
 
@@ -43,7 +44,7 @@ geom_norm_ellipse <- function(data = NULL, fill = "#333333", color = NA, size = 
 
   geom_ellipse <- function(x, type = "norm", fill, size, segments, color) {
 
-    stat_ellipse(
+    ggplot2::stat_ellipse(
       data = data,
       type = type,
       level = x,
