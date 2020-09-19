@@ -60,3 +60,34 @@ geom_norm_ellipse <- function(data = NULL, fill = "#333333", color = NA, size = 
 
 }
 
+#' @export
+css_chunk <-
+"body {
+  font-family: Palatino, serif;
+  font-size: 16px;
+  background-color: #FFFCF9;
+}
+
+h1, h2, h3, h4 {
+  font-family: Palatino, serif;
+  font-weight: bold;
+}
+
+blockquote {
+  font-size: 13px;
+  color: #828282;
+}
+
+pre, code {
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+}
+
+.tocify .list-group-item {
+  background-color: #FFFCF9;
+  font-family: Avenir Next Condensed;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+  background-color: steelblue;
+}"
