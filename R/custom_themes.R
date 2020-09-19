@@ -83,7 +83,7 @@ pre, code {
   border: 0px solid #ffffff;
 }
 
-.tocify .list-group-item {
+.tocify, .list-group-item {
   background-color: #FFFCF9;
   font-family: Avenir Next Condensed;
 }
@@ -92,7 +92,7 @@ pre, code {
   background-color: steelblue;
 }
 
-.btn,.dropdown-menu {
+.btn, .dropdown-menu {
   background-color: #FFFCF9;
   font-family: Avenir Next Condensed;
 }"
