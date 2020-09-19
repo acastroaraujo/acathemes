@@ -90,4 +90,9 @@ pre, code {
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   background-color: steelblue;
+}
+
+.btn,.dropdown-menu {
+  background-color: #FFFCF9;
+  font-family: Avenir Next Condensed;
 }"
